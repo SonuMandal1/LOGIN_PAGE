@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>SecureAuth</h1>
+            </div>
+            <button class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#" id="home-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#" id="login-link" class="active"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="#" id="register-link"><i class="fas fa-user-plus"></i> Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="login-panel" class="auth-panel">
+                <h2>Login to Your Account</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="username" placeholder="Enter your username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <button type="button" class="password-toggle" id="password-toggle">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="remember-forgot">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Sign In <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <p id="login-message" class="message"></p>
+                </form>
+                <div class="social-login">
+                    <p>Or login with</p>
+                    <div class="social-buttons">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button class="social-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="text-center mt-1">Don't have an account? <a href="#" id="register-link-text" class="page-link">Register here</a></p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>SecureAuth Authentication System &copy; 2025</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
